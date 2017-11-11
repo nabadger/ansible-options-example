@@ -1,5 +1,5 @@
 ---
-# Default default options across all applications
+# Default options across all applications
 app_defaults:
   options:
     option_a: default_value_for_option_a
@@ -7,7 +7,7 @@ app_defaults:
     option_c: default_value_for_option_c
 
 # Application definitions - each application has some 
-# optional options.
+# options (which is optional also option as per application_3).
 apps:
   application_1:
     description: This is application with all options defined
