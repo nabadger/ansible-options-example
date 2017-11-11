@@ -1,0 +1,20 @@
+- name: Display applications
+  debug:
+    var: apps
+
+- name: Display application defaults
+  debug:
+    var: app_defaults
+
+- name: Merge application options with defaults (defaults used if none provided) 
+  set_fact: 
+    app_options: >
+      {% set options_map = item.value.options|default({}) -%}
+     
+      {% set app_dict = dict({item.key: app_defaults.options|combine(options_map, recursive=True)}) -%}
+      {{ app_options|default({})|combine(app_dict) }}
+  with_dict: "{{apps}}"
+
+- name: Display merged options
+  debug:
+    var: app_options
