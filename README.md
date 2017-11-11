@@ -12,9 +12,9 @@ to get an idea of the structure in use.
 
 There are 3 applications defined.
 
-application_1 provides all options and nothing should be overriden.
-application_2 provides only 1 option - the rest should be filled in by the defaults.
-application_3 doesn't define any options, so the defaults should be used.
+* application_1 provides all options and nothing should be overriden.
+* application_2 provides only 1 option - the rest should be filled in by the defaults.
+* application_3 doesn't define any options, so the defaults should be used.
 
 ## Running
 ```
