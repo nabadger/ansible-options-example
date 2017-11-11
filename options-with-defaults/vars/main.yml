@@ -20,4 +20,4 @@ apps:
     options:
       option_a: app2-val-a
   application_3:
-    description: This is an applciation with no options defined
+    description: This is an application with no options defined
